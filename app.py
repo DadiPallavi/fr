@@ -27,7 +27,6 @@ if opt == "ADD_EXPENSE":
             )
             st.success(res.json()["msg"])
 
-
 elif opt == "VIEW_EXPENSES":
     st.header("VIEW EXPENSES")
     res = rq.get(f"{server_loc}/view_expenses")
